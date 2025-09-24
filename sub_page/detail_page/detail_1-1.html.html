@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARU ON_detailpage</title>
+    <!--maruon_favicon-->
+    <link rel="icon" href="../images/sub_img/logo.jpg">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- scrollTo -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
+
+    <!-- javascript -->
+    <script src="./js/detail.js" defer></script>
+    <script src="./js/main.js" defer></script>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/aside.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./index.html">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="popup_banner" id="popupBanner">
+            <a href="#!">
+                <p>신규 회원가입하고 2,000원 적립금 받으세요!</p>
+            </a>
+            <div class="ban_close">닫기</div>
+        </div><!--popup_banner-->
+        <nav class="gnb_top">
+            <ul>
+                <li><a href="#!">로그인</a></li>
+                <li><a href="#!">회원가입</a></li>
+                <li><a href="#!">마이페이지</a></li>
+                <li><a href="#!">장바구니 <span class="num" id="itemCount">0</span></a></li>
+            </ul>
+        </nav><!--gnb_top-->
+        <div class="logo_box">
+            <a href="./index.html"><img src="./images/main_img/logo.jpg" alt="마루온 로고"></a>
+            <div class="search_box">
+                <input type="search" placeholder="        검색어를 입력하세요">
+                <a href="#!"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div><!--logo_box-->
+        <div class="gnb_outer">
+            <div class="outer">
+                <div class="cat_open"><i class="fa-solid fa-list"></i></div>
+                <div class="cat_close"><i class="fa-solid fa-xmark"></i></div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#!">침대/매트리스</a></li>
+                        <li><a href="#!">옷장/수납</a></li>
+                        <li><a href="#!">책상/책장</a></li>
+                        <li><a href="#!">의자</a></li>
+                        <li><a href="../sub_sofa.html" style="color: red; font-weight: bold;">소파</a></li>
+                        <li><a href="#!">신상품</a></li>
+                        <li><a href="#!">할인이벤트</a></li>
+                    </ul>
+                </nav><!--menu-->
+                <nav class="category" id="categoryMenu">
+                    <ul>
+                        <li><a href="#!">싱글침대</a></li>
+                        <li><a href="#!">더블/퀸/킹침대</a></li>
+                        <li><a href="#!">패밀리침대</a></li>
+                        <li><a href="#!">수납침대</a></li>
+                        <li><a href="#!">2층/벙커침대</a></li>
+                        <li><a href="#!">매트리스</a></li>
+                        <li><a href="#!">침대프레임</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#!">2도어/3도어/슬라이딩 옷장</a></li>
+                        <li><a href="#!">붙박이장</a></li>
+                        <li><a href="#!">행거/오픈형 옷장</a></li>
+                        <li><a href="#!">서랍장</a></li>
+                        <li><a href="#!">수납장/다용도장</a></li>
+                        <li><a href="#!">신발장</a></li>
+                        <li><a href="#!">화장대/수납겸용 화장대</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#!">사무용/공부 책상</a></li>
+                        <li><a href="#!">컴퓨터 책상</a></li>
+                        <li><a href="#!">높이조절 책상</a></li>
+                        <li><a href="#!">코너형 책상</a></li>
+                        <li><a href="#!">책장/수납형 책장</a></li>
+                        <li><a href="#!">벽걸이 선반/수납</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#!">사무용 의자</a></li>
+                        <li><a href="#!">게이밍 의자</a></li>
+                        <li><a href="#!">식탁 의자</a></li>
+                        <li><a href="#!">원목/디자인의자</a></li>
+                        <li><a href="#!">스툴/보조의자</a></li>
+                        <li><a href="#!">좌식의자</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#!">1인용 소파</a></li>
+                        <li><a href="#!">2~3인용 소파</a></li>
+                        <li><a href="#!">4인용 소파</a></li>
+                        <li><a href="#!">리클라이너 소파</a></li>
+                        <li><a href="#!">소파베드</a></li>
+                    </ul>
+                </nav><!--category-->
+            </div><!--outer-->
+        </div><!--gnb_outer-->
+    </header>
+
+    <section class="detail_main">
+        <div class="detail_container">
+            <div class="product_img">
+                <div class="scale_img">
+                    <div class="main_img">
+                        <img src="./images/detail_1-1img/1.jpg" alt="소파 디테일 이미지1">
+                    </div>
+                </div>
+                <ul class="sub_img">
+                    <li><img src="./images/detail_1-1img/detail_img01.jpg"></li>
+                    <li><img src="./images/detail_1-1img/detail_img02.jpg"></li>
+                    <li><img src="./images/detail_1-1img/detail_img03.jpg"></li>
+                    <li><img src="./images/detail_1-1img/detail_img04.jpg"></li>
+                    <li><img src="./images/detail_1-1img/detail_img05.jpg"></li>
+                    <li><img src="./images/detail_1-1img/detail_img06.jpg"></li>
+                </ul>
+            </div><!--product_img-->
+            <div class="product_info">
+                <h2 class="name">뮤스티 4인용 패브릭 방수 거실 소파+스툴</h2>
+                <p class="price_original"><span>소비자가</span><span>550,000원</span></p>
+                <p class="price_sale"><span>판매가</span><span>&nbsp;&nbsp;&nbsp;&nbsp;437,000원</span></p>
+                <p class="delivery"><span>배송방법</span><span>화물배송(배송비 3,000원)</span></p>
+                <div class="option">
+                    <label for="color_select">색상 선택옵션</label>
+                    <select id="color_select">
+                        <option value="">- [필수] 옵션을 선택해 주세요 -</option>
+                        <option value="white">화이트</option>
+                        <option value="beige">베이지</option>
+                        <option value="brown">브라운</option>
+                        <option value="gray">그레이</option>
+                        <option value="black">블랙</option>
+                    </select>
+                </div>
+                <p class="min_order">(최소 주문수량 1개 이상)</p>
+                <div class="amount">
+                    <label for="quantity">수량</label>
+                    <input type="number" value="0" class="number">
+                    <p class="total">437,000원</p>
+                </div>
+                <div class="button">
+                    <button class="buy">구매하기</button>
+                    <button class="cart" onclick="cart()" id="addBtn">장바구니</button>
+                    <button class="wishlist" onclick="wishlist()">관심상품</button>
+                </div>
+            </div><!--product_info-->
+        </div><!--detail_container-->
+    </section><!--detail_main-->
+
+    <div class="recommend">
+        <div class="title">함께 사면 좋은 상품</div>
+        <div class="rec_container">
+            <div class="product">
+                <a href="#!">
+                    <div class="product_img">
+                        <p class="new">New</p>
+                        <img src="./images/detail_1-1img/recommend01.jpg" alt="신상품 이미지1">
+                    </div>
+                    <div class="icon">
+                        <div><img src="./images/main_img/someting_icon.png"></div>
+                        <div><img src="./images/main_img/cart_icon.png"></div>
+                    </div>
+                    <div class="text">
+                        <div class="color_box">
+                            <p style="background-color: #ffffff;"></p>
+                            <p style="background-color: #EAC8A7;"></p>
+                            <p style="background-color: #5D5B5B;"></p>
+                        </div>
+                        <p class="name">로드 리프트 소파테이블 좌식 탁자 멀티(다크그레이)</p>
+                        <p class="price">판매가 : 368,000원</p>
+                    </div>
+                </a>
+            </div><!--product-->
+            <div class="product">
+                <a href="#!">
+                    <div class="product_img">
+                        <p class="best">Best</p>
+                        <img src="./images/detail_1-1img/recommend02.jpg" alt="베스트이미지2">
+                    </div>
+                    <div class="icon">
+                        <div><img src="./images/main_img/someting_icon.png"></div>
+                        <div><img src="./images/main_img/cart_icon.png"></div>
+                    </div>
+                    <div class="text">
+                        <div class="color_box">
+                            <p style="background-color: #ffffff;"></p>
+                            <p style="background-color: #EAC8A7;"></p>
+                            <p style="background-color: #463716;"></p>
+                            <p style="background-color: #5D5B5B;"></p>
+                            <p style="background-color: #000000;"></p>
+                        </div>
+                        <p class="name">뮤스티 4인용 패브릭 방수 거실 소파+스툴</p>
+                        <p class="price">판매가 : 437,000원</p>
+                    </div>
+                </a>
+            </div><!--product-->
+        </div><!--rec_container-->
+    </div><!--recommend-->
+
+    <section class="detail">
+        <input type="radio" name="detail_btn" id="detail_01" checked>
+        <input type="radio" name="detail_btn" id="detail_02">
+        <input type="radio" name="detail_btn" id="detail_03">
+        <input type="radio" name="detail_btn" id="detail_04">
+
+        <div class="detail_all">
+            <div class="detail_lab">
+                <label for="detail_01">
+                    <div>제품 상세정보</div>
+                </label>
+                <label for="detail_02">
+                    <div>고객후기</div>
+                </label>
+                <label for="detail_03">
+                    <div>상품문의</div>
+                </label>
+                <label for="detail_04">
+                    <div>쇼핑가이드</div>
+                </label>
+            </div>
+            <div class="detail_container">
+                <div class="detail_list list_01">
+                    <div class="img_list01"><img src="./images/detail_1-1img/detail_page.jpg"></div>
+                    <div class="img_list02"><img src="./images/detail_1-1img/delivery_info.jpg"></div>
+                    <div class="img_list03"><img src="./images/detail_1-1img/delevery_info02.jpg"></div>
+                </div><!--list_01-->
+                <div class="detail_list list_02">
+                    <div class="det_left">
+                        <p>4.8</p>
+                        <p style="color: rgb(230, 214, 192);">★★★★☆</p>
+                        <p>리뷰 작성하기</p>
+                    </div>
+                    <div class="det_right">
+                        <div>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <div>
+                            <p>1,204</p>
+                            <p>15</p>
+                            <p>5</p>
+                            <p>5</p>
+                            <p>5</p>
+                        </div>
+                    </div>
+                    <div class="det_bot">
+                        <div>
+                            <div class="product">
+                                <a href="#!">
+                                    <div class="product_img">
+                                        <img src="./images/detail_1-1img/best_01.jpg" alt="리뷰이미지1">
+                                        <div class="more_box">더보기</div>
+                                    </div>
+                                    <div class="text">
+                                        <p class="txt01">침실에 무난하게 잘 어울리고 이뻐요</p>
+                                        <p class="txt02">침실에 무난하게 잘 어울리고 이뻐요 (2024-12-10 20:00)</p>
+                                        <p class="star">★★★★★</p>
+                                        <p class="name">aud******</p>
+                                    </div>
+                                </a>
+                            </div><!--product-->
+                            <div class="product">
+                                <a href="#!">
+                                    <div class="product_img">
+                                        <img src="./images/detail_1-1img/photo_review02.jpg" alt="리뷰이미지2">
+                                        <div class="more_box">더보기</div>
+                                    </div>
+                                    <div class="text">
+                                        <p class="txt01">튼튼하고 거실에 놓으니 분위기가 달라졌어요</p>
+                                        <p class="txt02">튼튼하고 거실에 놓으니 분위기가 달라졌어요 (2024-12-13 16:45)</p>
+                                        <p class="star">★★★★★</p>
+                                        <p class="name">tjs******</p>
+                                    </div>
+                                </a>
+                            </div><!--product-->
+                            <div class="product">
+                                <a href="#!">
+                                    <div class="product_img">
+                                        <img src="./images/detail_1-1img/best_06.jpg" alt="리뷰이미지3">
+                                        <div class="more_box">더보기</div>
+                                    </div>
+                                    <div class="text">
+                                        <p class="txt01">색감이 너무 이쁘고 자꾸 눈이가요</p>
+                                        <p class="txt02">색감이 너무 이쁘고 자꾸 눈이가요 (2024-12-15 22:37)</p>
+                                        <p class="star">★★★★★</p>
+                                        <p class="name">als******</p>
+                                    </div>
+                                </a>
+                            </div><!--product-->
+                            <div class="product">
+                                <a href="#!">
+                                    <div class="product_img">
+                                        <img src="./images/detail_1-1img/photo_review04.jpg" alt="리뷰이미지1">
+                                        <div class="more_box">더보기</div>
+                                    </div>
+                                    <div class="text">
+                                        <p class="txt01">깔끔하고 수납이 많아서 좋아요</p>
+                                        <p class="txt02">깔끔하고 수납이 많아서 좋아요 (2024-12-15 21:20)</p>
+                                        <p class="star">★★★★★</p>
+                                        <p class="name">tmd******</p>
+                                    </div>
+                                </a>
+                            </div><!--product-->
+                            <div class="product">
+                                <a href="#!">
+                                    <div class="product_img">
+                                        <img src="./images/detail_1-1img/photo_review05.jpg" alt="리뷰이미지5">
+                                        <div class="more_box">더보기</div>
+                                    </div>
+                                    <div class="text">
+                                        <p class="txt01">원하던 느낌입니다. 튼튼하고 인테리어와 잘어울려요</p>
+                                        <p class="txt02">원하던 느낌입니다. 튼튼하고 인테리어와 잘어울려요 (2024-12-25 13:48)</p>
+                                        <p class="star">★★★★★</p>
+                                        <p class="name">tkd******</p>
+                                    </div>
+                                </a>
+                            </div><!--product-->
+                        </div>
+                    </div>
+
+                    <div class="review_item">
+                        <div class="content_all">
+                            <div class="content">
+                                <div class="thumbnail">
+                                    <div class="rev_img"><img src="images/detail_1-1img/sofa_review_01.jpg"></div>
+                                    <div class="rev_txt">
+                                        <p class="title">모멘트 3인 소파</p>
+                                        <p class="grade_txt">
+                                            <span class="grade">아주 좋아요</span>
+                                            <span class="star">★★★★★</span>
+                                        </p>
+                                        <p class="text">무난한 색상으로 자연스러워요</p>
+                                    </div>
+                                </div><!--thumbnail-->
+                                <div class="photo_rev">
+                                    <div class="add">
+                                        <a href="#!">
+                                            <div class="comment_btn">댓글달기</div>
+                                        </a>
+                                    </div>
+                                    <div class="wish_btn"><img src="./images/main_img/someting_icon.png"></div>
+                                    <div class="info">
+                                        <p>(2025-04-23 22:00)</p>
+                                        <p>audtjs2891님이 작성한 댓글입니다.</p>
+                                    </div>
+                                </div>
+                            </div><!--content-->
+                            <div class="content">
+                                <div class="thumbnail">
+                                    <div class="rev_img"><img src="images/detail_1-1img/sofa_review_02.jpg"></div>
+                                    <div class="rev_txt">
+                                        <p class="title">네스트 원목 호텔 라운지 인테리어 3인 소파</p>
+                                        <p class="grade_txt">
+                                            <span class="grade">아주 좋아요</span>
+                                            <span class="star">★★★★★</span>
+                                        </p>
+                                        <p class="text">크기가 너무 마음에 들어요! 큰 공간차지를 안해서 너무 좋아요</p>
+                                    </div>
+                                </div><!--thumbnail-->
+                                <div class="photo_rev">
+                                    <div class="add">
+                                        <a href="#!">
+                                            <div class="comment_btn">댓글달기</div>
+                                        </a>
+                                    </div>
+                                    <div class="wish_btn"><img src="./images/main_img/someting_icon.png"></div>
+                                    <div class="info">
+                                        <p>(2025-04-23 22:00)</p>
+                                        <p>audtjs2891님이 작성한 댓글입니다.</p>
+                                    </div>
+                                </div>
+                            </div><!--content-->
+                            <div class="content">
+                                <div class="thumbnail">
+                                    <div class="rev_img"><img src="images/detail_1-1img/best_06.jpg"></div>
+                                    <div class="rev_txt">
+                                        <p class="title">코지 패브릭 라운지 인테리어 2인소파</p>
+                                        <p class="grade_txt">
+                                            <span class="grade">아주 좋아요</span>
+                                            <span class="star">★★★★★</span>
+                                        </p>
+                                        <p class="text">거실 분위기를 편하게 만들어줘요! 만족합니다</p>
+                                    </div>
+                                </div><!--thumbnail-->
+                                <div class="photo_rev">
+                                    <div class="add">
+                                        <a href="#!">
+                                            <div class="comment_btn">댓글달기</div>
+                                        </a>
+                                    </div>
+                                    <div class="wish_btn"><img src="./images/main_img/someting_icon.png"></div>
+                                    <div class="info">
+                                        <p>(2025-04-23 22:00)</p>
+                                        <p>audtjs2891님이 작성한 댓글입니다.</p>
+                                    </div>
+                                </div>
+                            </div><!--content-->
+                            <div class="content">
+                                <div class="thumbnail">
+                                    <div class="rev_img"><img src="images/detail_1-1img/1.jpg"></div>
+                                    <div class="rev_txt">
+                                        <p class="title">뮤스티 4인용 패브릭 방수 거실 소파+스툴</p>
+                                        <p class="grade_txt">
+                                            <span class="grade">아주 좋아요</span>
+                                            <span class="star">★★★★★</span>
+                                        </p>
+                                        <p class="text">소파가 너무 이쁘고 깔끔해요. 그리고 편안해서 아이들이 무척 좋아해요^^~</p>
+                                    </div>
+                                </div><!--thumbnail-->
+                                <div class="photo_rev">
+                                    <div class="add">
+                                        <a href="#!">
+                                            <div class="comment_btn">댓글달기</div>
+                                        </a>
+                                    </div>
+                                    <div class="wish_btn"><img src="./images/main_img/someting_icon.png"></div>
+                                    <div class="info">
+                                        <p>(2025-04-23 22:00)</p>
+                                        <p>audtjs2891님이 작성한 댓글입니다.</p>
+                                    </div>
+                                </div>
+                            </div><!--content-->
+                        </div><!--content_all-->
+                    </div><!--review_item-->
+
+                    <div>
+                        <div class="review_write">
+                            <p>별점 & 리뷰남기기</p>
+                            <div class="grade_select">
+                                <select>
+                                    <option value="5"><span style="color: rgb(230, 214, 192);">★★★★★</span><span>
+                                            아주좋아요</span></option>
+                                    <option value="4"><span style="color: rgb(230, 214, 192);">★★★★☆</span><span>
+                                            좋아요</span></option>
+                                    <option value="5"><span style="color: rgb(230, 214, 192);">★★★☆☆</span><span>
+                                            보통이에요</span></option>
+                                    <option value="5"><span style="color: rgb(230, 214, 192);">★★☆☆☆</span><span>
+                                            별로에요</span></option>
+                                    <option value="5"><span style="color: rgb(230, 214, 192);">★☆☆☆☆</span><span>
+                                            아주별로에요</span></option>
+                                </select>
+                            </div><!--grade_select-->
+                            <div class="guide">
+                                <div><textarea placeholder="  리뷰를 작성해 주세요"></textarea></div>
+                                <div class="review_control">
+                                    <label class="file_attach">
+                                        <div><i class="fa-solid fa-camera"></i> 사진&동영상첨부</div>
+                                        <input type="file" accept="image/*,video/*">
+                                    </label>
+                                    <button type="submit" class="submit_btn">작성완료</button>
+                                </div>
+                            </div><!--guide-->
+                        </div>
+                    </div><!--review_write-->
+                    <div class="page">
+                        <label for="radio">
+                            <div><i class="fa-solid fa-angles-left"></i></div>
+                        </label>
+                        <label for="radio">
+                            <div><i class="fa-solid fa-angle-left"></i></div>
+                        </label>
+                        <label for="radio">
+                            <div>1</div>
+                        </label>
+                        <label for="radio">
+                            <div>2</div>
+                        </label>
+                        <label for="radio">
+                            <div>3</div>
+                        </label>
+                        <label for="radio">
+                            <div>4</div>
+                        </label>
+                        <label for="radio">
+                            <div>5</div>
+                        </label>
+                        <label for="radio">
+                            <div>6</div>
+                        </label>
+                        <label for="radio">
+                            <div><i class="fa-solid fa-angle-right"></i></div>
+                        </label>
+                        <label for="radio">
+                            <div><i class="fa-solid fa-angles-right"></i></div>
+                        </label>
+                    </div><!--page-->
+                </div><!--list_02-->
+
+                <div class="detail_list list_03">
+                    <div class="full_view">
+                        <div>상품문의 전체보기</div>
+                    </div>
+                    <div class="inquiry">
+                        <div class="inquiry_txt list_inq01">
+                            <p><span><i class="fa-solid fa-lock-open"></i></span><span>N</span></p>
+                            <p class="inq">리클라이너 소파</p>
+                            <p class="name">정명선</p>
+                            <p class="time">16:27</p>
+                            <p class="answer">답변완료</p>
+                        </div>
+                        <div class="inquiry_txt list_inq02">
+                            <p><span><i class="fa-solid fa-lock"></i></span><span>N</span></p>
+                            <p class="inq">좌석 분리 가능 여부</p>
+                            <p class="name">정명선</p>
+                            <p class="time">14:54</p>
+                            <p class="answer">답변완료</p>
+                        </div>
+                        <div class="inquiry_txt list_inq02">
+                            <p><span><i class="fa-solid fa-lock"></i></span><span>N</span></p>
+                            <p class="inq">천연면피 가죽 두께 알려주세요</p>
+                            <p class="name">정명선</p>
+                            <p class="time">2025-05-25 <span>16:27</span></p>
+                            <p class="answer">답변완료</p>
+                        </div>
+                        <div class="inquiry_txt list_inq02">
+                            <p><span><i class="fa-solid fa-lock"></i></span><span>N</span></p>
+                            <p class="inq">배송 기간 문의</p>
+                            <p class="name">정명선</p>
+                            <p class="time">2025-05-17 <span>22:43</span></p>
+                            <p class="answer">답변완료</p>
+                        </div>
+                        <div class="inquiry_txt list_inq02">
+                            <p><span><i class="fa-solid fa-lock"></i></span></p>
+                            <p class="inq">패브릭 세척이 가능할까요?</p>
+                            <p class="name">정명선</p>
+                            <p class="time">2025-05-17 <span>00:38</span></p>
+                            <p class="answer">답변완료</p>
+                        </div>
+                        <div class="inquiry_txt list_inq02">
+                            <p><span><i class="fa-solid fa-lock"></i></span></p>
+                            <p class="inq">중간 테이블이 있을까요?</p>
+                            <p class="name">정명선</p>
+                            <p class="time">2025-05-14 <span>19:49</span></p>
+                            <p class="answer">답변완료</p>
+                        </div>
+                        <div class="inquiry_txt list_inq02">
+                            <p><span><i class="fa-solid fa-lock"></i></span></p>
+                            <p class="inq">추가 구매문의</p>
+                            <p class="name">정명선</p>
+                            <p class="time">2025-05-13 <span>23:08</span></p>
+                            <p class="answer">답변완료</p>
+                        </div>
+                        <div class="inquiry_txt list_inq02">
+                            <p><span><i class="fa-solid fa-lock"></i></span></p>
+                            <p class="inq">연그레이 컬러밖에 없나요??</p>
+                            <p class="name">정명선</p>
+                            <p class="time">2025-05-12 <span>15:46</span></p>
+                            <p class="answer">답변완료</p>
+                        </div>
+
+                    </div><!--inquiry-->
+                    <div class="page">
+                        <label for="radio"><a href="#!"><i class="fa-solid fa-angles-left"></i></a></label>
+                        <label for="radio"><a href="#!"><i class="fa-solid fa-angle-left"></i></a></label>
+                        <label for="radio"><a href="#!">1</a></label>
+                        <label for="radio"><a href="#!">2</a></label>
+                        <label for="radio"><a href="#!">3</a></label>
+                        <label for="radio"><a href="#!">4</a></label>
+                        <label for="radio"><a href="#!">5</a></label>
+                        <label for="radio"><a href="#!">6</a></label>
+                        <label for="radio"><a href="#!"><i class="fa-solid fa-angle-right"></i></a></label>
+                        <label for="radio"><a href="#!"><i class="fa-solid fa-angles-right"></i></a></label>
+                    </div>
+                </div><!--list_03-->
+
+                <div class="detail_list list_04">
+                    <div class="shopping_guide guide01">
+                        <h3>배송정보</h3>
+                        <div>
+                            <p>배송 방법 : 택배배송 지역 : 전국(제주|도서산간 추가비용)<br>
+                                배송 비용 : 착불 8,700원<br>
+                                배송 기간 : 3일 ~ 8일<br>
+                                배송 안내 : * 착불배송 상품의 경우 상세페이지 하단내용을 참고해주시고, 정확한<br> 착불배송비는 유선상으로 안내해드립니다.<br>
+                                - 산간벽지나 도서지방은 별도의 추가금액을 지불하셔야 하는 경우가 있습니다.<br>
+                                고객님께서 주문하신 상품은 입금 확인후 배송해 드립니다. 다만, 상품종류에 따라서 상품의<br>배송이 다소 지연될 수 있습니다.<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="shopping_guide guide02">
+                        <h3>교환 및 반품정보</h3>
+                        <h4 style="color: #333;">교환 및 반품이 가능한 경우</h4>
+                        <p>- 상품을 공급 받으신 날로부터 7일이내,<br>
+                            포장을 개봉하였거나 포장이 훼손되어 상품가치가 상실된 경우에는 교환/반품이 불가능합니다.<br>
+                            - 공급받으신 상품 및 용역의 내용이 표시.광고 내용과<br>
+                            다르거나 다르게 이행된 경우에는 공급받은 날로부터 3월이내, 그사실을 알게 된 날로부터 <br>30일이내<br>
+                            - 주문취소 요청시 상품이 배송출발 하였을 경우 변심에 의한 교환/반품 사유로 처리되어 <br>왕복배송비가 발생되며,<br>
+                            배송비는 고객님 부담입니다.<br>
+                        </p>
+
+                        <h4 style="color: #333;" class="guide02_1">교환 및 반품이 불가능한 경우</h4>
+                        <p>- 고객님의 책임 있는 사유로 상품등이 멸실 또는 훼손된 경우. 단, 상품의 내용을 확인하기<br>위하여<br>
+                            포장 등을 훼손한 경우는 제외<br>
+                            - 포장을 개봉하였거나 포장이 훼손되어 상품가치가 상실된 경우<br>
+                            - 고객님의 사용 또는 일부 소비에 의하여 상품의 가치가 현저히 감소한 경우<br>
+                            - 시간의 경과에 의하여 재판매가 곤란할 정도로 상품등의 가치가 현저히 감소한 경우<br>
+                            (자세한 내용은 1:1 게시판 상담을 이용해 주시기 바랍니다.)<br>
+                            ※ 고객님의 마음이 바뀌어 교환, 반품을 하실 경우 상품 왕복반송 비용은 고객님께서 부담하셔야 <br>합니다.<br>
+                            (색상 교환, 사이즈 교환 등 포함)<br>
+                        </p>
+                    </div>
+                </div><!--list_04-->
+            </div>
+        </div>
+    </section><!--detail-->
+
+
+    <aside class="wing_box">
+        <div class="btn_top"><i class="fa-solid fa-arrow-up"></i></div>
+        <div class="wing_btn open"><i class="fa-solid fa-angle-left"></i></div>
+        <div class="wing_btn close" style="display: none;"><i class="fa-solid fa-xmark"></i></div>
+        <div class="wing_banner">
+            <div class="wing_ban">
+                <a href="#!"><img src="images/detail_1-1img/윙배너_01.jpg"></a>
+                <div class="wing_01">
+                    <div><a href="#!">공지사항</a></div>
+                    <div><a href="#!">상품문의</a></div>
+                </div>
+                <div class="wing_02">
+                    <div><a href="#!">상품리뷰</a></div>
+                    <div><a href="#!">이벤트</a></div>
+                </div>
+                <div class="wing_03">
+                    <div><a href="#!">장바구니</a></div>
+                    <div><a href="#!">자주 묻는 질문</a></div>
+                </div>
+                <div class="wing_04">
+                    <p>고객센터</p>
+                    <p>1577-5678</p>
+                    <p>평일 오전 9시 ~ 오후 5시</p>
+                    <p>점심시간 오후 12시 ~ 오후 1시</p>
+                    <p>주말 및 공휴일 휴무</p>
+                </div>
+                <div class="wing_05">
+                    <a href="#!"><img src="./images/detail_1-1img/talktalk.jpg" alt=""></a>
+                    <a href="#!"><img src="./images/detail_1-1img/kakaotalk.jpg" alt=""></a>
+                </div>
+            </div><!--wing_ban-->
+        </div><!--wing_banner-->
+    </aside><!--wing_box-->
+
+    <footer class="footer">
+        <div class="footer_all">
+            <div class="footer_left">
+                <div><img src="../images/sub_img/logo.jpg" alt="로고"></div>
+                <nav>
+                    <ul>
+                        <li><a href="#!">회사소개</a></li>
+                        <li><a href="#!">매장안내</a></li>
+                        <li><a href="#!">매장개설안내</a></li>
+                        <li><a href="#!">이용안내</a></li>
+                        <li><a href="#!">개인정보보호정책</a></li>
+                    </ul>
+                </nav>
+                <p><span>상호 : MARU ON</span><span>대표 : 정명선</span><span>전화 : 010-4592-5557</span><span>주소 : 47606 부산광역시
+                        연제구 연수로 11번길 100-14 한울타워 10층</span></p>
+                <P>반품주소 : 물류 기사님 직접 수거 (고객발송 불가)</P>
+                <P><span>사업자등록번호 : 4955007601</span><span>통신판매업신고 : 2891-부산연제구-1029[사업자정보확인]</span></P>
+                <p>개인정보관리책임자 : 정명선(audtjs2891@naver.com)</p>
+
+                <p class="copy">COPYRIGHT ㉿ {company_name} ALL RIGHTS TESERVED. Designed by lys ITSPEOPLE / Hosting by
+                    카페24㈜</p>
+            </div>
+            <div class="footer_right">
+                <div>
+                    <p>고객센터</p>
+                    <p>1577-5678</p>
+                </div>
+                <div>
+                    <p>평일 AM 09:00 - PM 05:00</p>
+                    <p>점심시간 PM 12:00 - PM 01:00</p>
+                    <p>주말 및 공휴일 휴무</p>
+                </div>
+                <div>
+                    <p class="mony">입금계좌안내</p>
+                    <p>국민 854702-01-207029</p>
+                    <p>예금주 : 정명선(MARU ON)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

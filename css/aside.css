@@ -1,0 +1,115 @@
+.btn_top {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    background-color: #fff;
+    color: #aaa;
+    font-weight: 600;
+    text-align: center;
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    border-radius: 50px;
+    border: 1px solid #aaa;
+}
+
+.wing_box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 30;
+}
+
+.wing_box .wing_btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-right: none;
+    z-index: 5;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+    cursor: pointer;
+}
+
+.wing_box .wing_banner {
+    width: 280px;
+    height: 100vh;
+    border: 1px solid #ccc;
+    float: left;
+    background-color: white;
+    position: relative;
+    display: none;
+    /* 초기 상태에서 숨김 */
+}
+
+.wing_box .wing_banner div {
+    width: 260px;
+    height: auto;
+    top: 0;
+}
+
+.wing_box .wing_banner .wing_ban>a img {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.wing_box .wing_banner div a img:nth-child(2),
+.wing_box .wing_banner div a img:nth-child(3) {
+    width: 260px;
+    overflow: hidden;
+}
+
+.wing_box .wing_banner .wing_01,
+.wing_box .wing_banner .wing_02,
+.wing_box .wing_banner .wing_03,
+.wing_box .wing_banner .wing_04 {
+    width: 260px;
+    float: left;
+    color: rgb(80, 80, 80);
+}
+
+.wing_box .wing_banner .wing_ban {
+    margin-left: 10px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.wing_box .wing_banner .wing_ban div>div {
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.wing_box .wing_banner .wing_04 {
+    margin-bottom: 70px;
+}
+
+.wing_box .wing_banner .wing_04 p:nth-child(1) {
+    margin-top: 70px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.wing_box .wing_banner .wing_04 p:nth-child(2) {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.wing_box .wing_banner .wing_05 a {
+    width: 260px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.wing_box .wing_banner .wing_05 img {
+    margin-bottom: 30px;
+}

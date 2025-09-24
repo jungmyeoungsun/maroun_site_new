@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARU ON_mainpage</title>
+    <!--maruon_favicon-->
+    <link rel="icon" href="./images/main_img/logo.jpg">
+    <!-- font_awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- scrollTo -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- javascript -->
+    <script src="./js/main.js" defer></script>
+    <script src="./sub_page/js/sub.js" defer></script>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/aside.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="popup_banner" id="popupBanner">
+            <a href="#!">
+                <p>신규 회원가입하고 2,000원 적립금 받으세요!</p>
+            </a>
+            <div class="ban_close">닫기</div>
+        </div><!--popup_banner-->
+        <nav class="gnb_top">
+            <ul>
+                <li><a href="#!">로그인</a></li>
+                <li><a href="#!">회원가입</a></li>
+                <li><a href="#!">마이페이지</a></li>
+                <li><a href="#!">장바구니 <span class="num">0</span></a></li>
+            </ul>
+        </nav><!--gnb_top-->
+        <div class="logo_box">
+            <a href="./index.html"><img src="./images/main_img/logo.jpg" alt="마루온 로고"></a>
+            <div class="search_box">
+                <input type="search" placeholder="        검색어를 입력하세요">
+                <a href="#!"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div><!--logo_box-->
+        <div class="gnb_outer">
+            <div class="outer">
+                <div class="cat_open"><i class="fa-solid fa-list"></i></div>
+                <div class="cat_close"><i class="fa-solid fa-xmark"></i></div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#!">침대/매트리스</a></li>
+                        <li><a href="#!">옷장/수납</a></li>
+                        <li><a href="#!">책상/책장</a></li>
+                        <li><a href="#!">의자</a></li>
+                        <li><a href="./sub_page/sub_sofa.html" style="color: red; font-weight: bold;">소파</a></li>
+                        <li><a href="#!">신상품</a></li>
+                        <li><a href="#!">할인이벤트</a></li>
+                    </ul>
+                </nav><!--menu-->
+                <nav class="category" id="categoryMenu">
+                    <ul>
+                        <li><a href="#!">싱글침대</a></li>
+                        <li><a href="#!">더블/퀸/킹침대</a></li>
+                        <li><a href="#!">패밀리침대</a></li>
+                        <li><a href="#!">수납침대</a></li>
+                        <li><a href="#!">2층/벙커침대</a></li>
+                        <li><a href="#!">매트리스</a></li>
+                        <li><a href="#!">침대프레임</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#!">2도어/3도어/슬라이딩 옷장</a></li>
+                        <li><a href="#!">붙박이장</a></li>
+                        <li><a href="#!">행거/오픈형 옷장</a></li>
+                        <li><a href="#!">서랍장</a></li>
+                        <li><a href="#!">수납장/다용도장</a></li>
+                        <li><a href="#!">신발장</a></li>
+                        <li><a href="#!">화장대/수납겸용 화장대</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#!">사무용/공부 책상</a></li>
+                        <li><a href="#!">컴퓨터 책상</a></li>
+                        <li><a href="#!">높이조절 책상</a></li>
+                        <li><a href="#!">코너형 책상</a></li>
+                        <li><a href="#!">책장/수납형 책장</a></li>
+                        <li><a href="#!">벽걸이 선반/수납</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#!">사무용 의자</a></li>
+                        <li><a href="#!">게이밍 의자</a></li>
+                        <li><a href="#!">식탁 의자</a></li>
+                        <li><a href="#!">원목/디자인의자</a></li>
+                        <li><a href="#!">스툴/보조의자</a></li>
+                        <li><a href="#!">좌식의자</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#!">1인용 소파</a></li>
+                        <li><a href="#!">2~3인용 소파</a></li>
+                        <li><a href="#!">4인용 소파</a></li>
+                        <li><a href="#!">리클라이너 소파</a></li>
+                        <li><a href="#!">소파베드</a></li>
+                    </ul>
+                </nav><!--category-->
+            </div><!--outer-->
+        </div><!--gnb_outer-->
+    </header>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/main_img/visual_main01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/main_img/visual_main02.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/main_img/visual_main03.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/main_img/visual_main04.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/main_img/visual_main05.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="limited_sale">
+        <h2>TIME SALE</h2>
+        <div class="sale_subtit">7일 한정세일!</div>
+        <p id="countdown"></p>
+        <div class="time_info">
+            <p>일</p>
+            <p>시간</p>
+            <p>분</p>
+            <p>초</p>
+        </div>
+    </div>
+    <section class="time_sale">
+        <div class="product_box">
+            <div class="product">
+                <a href="#!">
+                    <div class="product_img">
+                        <p class="sale">71%</p>
+                        <img src="./images/main_img/time_sale01.jpg" alt="타임세일 이미지1">
+                    </div>
+                    <div class="icon">
+                        <div><img src="./images/main_img/someting_icon.png"></div>
+                        <div><img src="./images/main_img/cart_icon.png"></div>
+                    </div>
+                    <div class="text">
+                        <div class="color_box">
+                            <p style="background-color: #ffffff;"></p>
+                            <p style="background-color: #1d1b18;"></p>
+                        </div>
+                        <p class="name">미드센츄리 거실 모듈 소파 침대 협탁600</p>
+                        <p class="price">판매가 : 164,000원</p>
+                    </div>
+                </a>
+            </div><!--product-->
+            <div class="product">
+                <a href="#!">
+                    <div class="product_img">
+                        <p class="sale">67%</p>
+                        <img src="./images/main_img/time_sale02.jpg" alt="타임세일 이미지2">
+                    </div>
+                    <div class="icon">
+                        <div><img src="./images/main_img/someting_icon.png"></div>
+                        <div><img src="./images/main_img/cart_icon.png"></div>
+                    </div>
+                    <div class="text">
+                        <div class="color_box">
+                            <p style="background-color: #ddcfb9;"></p>
+                            <p style="background-color: #755422;"></p>
+                        </div>
+                        <p class="name">오키 인테리어 좌식테이블 800 1200</p>
+                        <p class="price">판매가 : 155,000원</p>
+                    </div>
+                </a>
+            </div><!--product-->
+            <div class="product">
+                <a href="#!">
+                    <div class="product_img">
+                        <p class="sale">50%</p>
+                        <img src="./images/main_img/time_sale03.jpg" alt="타임세일 이미지3">
+                    </div>
+                    <div class="icon">
+                        <div><img src="./images/main_img/someting_icon.png"></div>
+                        <div><img src="./images/main_img/cart_icon.png"></div>
+                    </div>
+                    <div class="text">
+                        <div class="color_box">
+                            <p style="background-color: #ffffff;"></p>
+                            <p style="background-color: #5f5f5f;"></p>
+                            <p style="background-color: #0e0e0e;"></p>
+                        </div>
+                        <p class="name">플랩도어수납장 디스플레이 슬라이드 수납장</p>
+                        <p class="price">판매가 : 164,000원</p>
+                    </div>
+                </a>
+            </div><!--product-->
+            <div class="product">
+                <a href="#!">
+                    <div class="product_img">
+                        <p class="sale">59%</p>
+                        <img src="./images/main_img/time_sale04.jpg" alt="타임세일 이미지4">
+                    </div>
+                    <div class="icon">
+                        <div><img src="./images/main_img/someting_icon.png"></div>
+                        <div><img src="./images/main_img/cart_icon.png"></div>
+                    </div>
+                    <div class="text">
+                        <div class="color_box">
+                            <p style="background-color: #fddab6;"></p>
+                            <p style="background-color: #123A13;"></p>
+                            <p style="background-color: #463716;"></p>
+                        </div>
+                        <p class="name">꿈에 그린 주방 에보니아 앤틀러 식탁 테이블</p>
+                        <p class="price">판매가 : 349,000원</p>
+                    </div>
+                </a>
+            </div><!--product-->
+        </div><!--product_box-->
+    </section><!--time_sale-->
+
+    <input type="radio" name="event_ban" id="event_rad01" class="eve01" checked>
+    <input type="radio" name="event_ban" id="event_rad02" class="eve02">
+    <section class="event_banner">
+        <div class="box01 event_box">
+            <div class="event">
+                <a href="#!">
+                    <img src="./images/main_img/event_banner01.jpg" alt="이벤트배너01">
+                    <div class="title">심플하고 모던한 디자인 인테리어 아이템</div>
+                    <div class="on_box">자세히보기</div>
+                </a>
+            </div><!--event-->
+            <div class="event">
+                <a href="#!">
+                    <img src="./images/main_img/event_banner02.jpg" alt="이벤트배너02">
+                    <div class="title">감성적인 카페 분위기 인테리어 아이템</div>
+                    <div class="on_box">자세히보기</div>
+                </a>
+            </div><!--event-->
+        </div><!--box01-->
+        <div class="box02 event_box">
+            <div class="event">
+                <a href="#!">
+                    <img src="./images/main_img/best_01.jpg" alt="이벤트배너03">
+                    <div class="title">눈길이 가게 만드는 아기자기한 인테리어 아이템</div>
+                    <div class="on_box">자세히보기</div>
+                </a>
+            </div><!--event-->
+            <div class="event">
+                <a href="#!">
+                    <img src="./images/main_img/event_banner04.jpg" alt="이벤트배너04">
+                    <div class="title">깔끔한 화이트 디자인 인테리어 아이템</div>
+                    <div class="on_box">
+                        <p>자세히보기</p>
+                    </div>
+                </a>
+            </div><!--event-->
+        </div><!--box02-->
+        <div class="event_label">
+            <label for="event_rad01"></label>
+            <label for="event_rad02"></label>
+        </div><!--event_label-->
+    </section><!--event_bannter-->
+
+
+    <section class="best_item tit">
+        <input type="radio" name="best_btn" id="best_01" checked>
+        <input type="radio" name="best_btn" id="best_02">
+        <input type="radio" name="best_btn" id="best_03">
+        <input type="radio" name="best_btn" id="best_04">
+        <input type="radio" name="best_btn" id="best_05">
+
+        <h2>Best item</h2>
+        <p>이 달의 인기 상품을 만나보세요!</p>
+
+        <div class="top_wrap">
+            <nav class="category">
+                <label for="best_01">전체</label>
+                <label for="best_02">침실가구</label>
+                <label for="best_03">주방가구</label>
+                <label for="best_04">거실가구</label>
+                <label for="best_05">서재/사무용가구</label>
+            </nav><!--category-->
+
+            <div class="best_top">
+                <div class="top_list list_01">
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 1</p>
+                                <img src="./images/main_img/time_sale04.jpg" alt="타임세일 이미지1">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#c9b9a3"></span>
+                                    <span style="background:#5d5b5b"></span>
+                                </div>
+                                <p class="name">루머 모듈 3단선반 거실 장식장 사이트 테이블</p>
+                                <p class="price">판매가 : 164,500원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 2</p>
+                                <img src="./images/main_img/best_02.jpg" alt="타임세일 이미지1">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#c9b9a3"></span>
+                                    <span style="background:#463716"></span>
+                                    <span style="background:#5d5b5b"></span>
+                                    <span style="background:#2f1e58"></span>
+                                </div>
+                                <p class="name">모멘트 3인 소파</p>
+                                <p class="price">판매가 : 236,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 3</p>
+                                <img src="./images/main_img/best_03.jpg" alt="타임세일 이미지1">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#658678"></span>
+                                    <span style="background:#8e8e8e"></span>
+                                </div>
+                                <p class="name">슬림 고무나무 원목 거실 테이블 좌탁 2컬러</p>
+                                <p class="price">판매가 : 140,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                </div><!-- list_01 -->
+                <div class="top_list list_02">
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 1</p>
+                                <img src="./images/main_img/best_bed01.jpg" alt="침실가구 이미지1">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#c9b9a3"></span>
+                                </div>
+                                <p class="name">마티니 침실 세트</p>
+                                <p class="price">판매가 : 409,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 2</p>
+                                <img src="./images/main_img/best_bed02.jpg" alt="침실가구 이미지2">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#c9b9a3"></span>
+                                    <span style="background:#463716"></span>
+                                </div>
+                                <p class="name">모멘트 안토니 침대(Q/K)</p>
+                                <p class="price">판매가 : 625,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 3</p>
+                                <img src="./images/main_img/best_bed03.jpg" alt="침실가구 이미지3">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#463716"></span>
+                                </div>
+                                <p class="name">모데나 원목 침실 거울</p>
+                                <p class="price">판매가 : 179,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                </div><!-- list_02 -->
+                <div class="top_list list_03">
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 1</p>
+                                <img src="./images/main_img/best_kit01.jpg" alt="주방가구 이미지1">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#c9b9a3"></span>
+                                </div>
+                                <p class="name">루머 모듈 3단선반 거실 장식장 사이트 테이블</p>
+                                <p class="price">164,500원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 2</p>
+                                <img src="./images/main_img/best_kit02.jpg" alt="주방가구 이미지2">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#c9b9a3"></span>
+                                </div>
+                                <p class="name">모멘트 3인 소파</p>
+                                <p class="price">236,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 3</p>
+                                <img src="./images/main_img/best_kit03.jpg" alt="주방가구 이미지3">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#c9b9a3"></span>
+                                </div>
+                                <p class="name">슬림 고무나무 원목 거실 테이블 좌탁 2컬러</p>
+                                <p class="price">판매가 : 140,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                </div><!-- list_03 -->
+                <div class="top_list list_04">
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 1</p>
+                                <img src="./images/main_img/best_living01.jpg" alt="거실가구 이미지1">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#c9b9a3"></span>
+                                </div>
+                                <p class="name">레넨 엔틱 원목 가죽 벤치 의자 3인용 거실 소파</p>
+                                <p class="price">판매가 : 295,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 2</p>
+                                <img src="./images/main_img/best_living02.jpg" alt="거실가구 이미지2">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#5d5b5b"></span>
+                                </div>
+                                <p class="name">스웬 무늬목 블랙 사각 소파 테이블 모던 탁자 1200</p>
+                                <p class="price">판매가 : 262,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 3</p>
+                                <img src="./images/main_img/best_03.jpg" alt="거실가구 이미지3">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#c9b9a3"></span>
+                                </div>
+                                <p class="name">슬림 고무나무 원목 거실 테이블 좌탁 2컬러</p>
+                                <p class="price">판매가 : 140,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                </div><!-- list_04 -->
+                <div class="top_list list_05">
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 1</p>
+                                <img src="./images/main_img/best_study01.jpg" alt="서재/사무용가구 이미지1">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#c9b9a3"></span>
+                                    <span style="background:#463716"></span>
+                                </div>
+                                <p class="name">제넨 고무나무 원목 서랍 책상 대형 작업 1800</p>
+                                <p class="price">판매가 : 530,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 2</p>
+                                <img src="./images/main_img/best_study02.jpg" alt="서재/사무용가구 이미지2">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#c9b9a3"></span>
+                                    <span style="background:#463716"></span>
+                                </div>
+                                <p class="name">앤드 원목 서재 고무나무 책꽃이 5단 책장 800</p>
+                                <p class="price">판매가 : 365,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 3</p>
+                                <img src="./images/main_img/best_study03.jpg" alt="서재/사무용가구 이미지3">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#8e8e8e"></span>
+                                </div>
+                                <p class="name">루엘 틈새 책장 슬림 좁은 틈새 책꽃이 400</p>
+                                <p class="price">판매가 : 257,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                </div><!-- list_05 -->
+            </div><!--best_top-->
+        </div><!--top_wrap-->
+
+        <div class="best_bottom">
+            <div class="bot_list list_01">
+                <div class="product">
+                    <a href="#!">
+                        <div class="product_img"><img src="./images/main_img/best_04.jpg"></div>
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#c9b9a3"></span>
+                                <span style="background:#463716"></span>
+                                <span style="background:#5d5b5b"></span>
+                                <span style="background:#268d9f"></span>
+                            </div>
+                            <p class="name">레체 예쁜 인테리어 거실장 북유럽 고급 티비장</p>
+                            <p class="price">판매가 : 325,000원</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#!">
+                        <div class="product_img"><img src="./images/main_img/best_05.jpg"></div>
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#c9b9a3"></span>
+                                <span style="background:#463716"></span>
+                            </div>
+                            <p class="name">루머 원목 모듈 거실 장식장 테이블</p>
+                            <p class="price">판매가 : 137,500원</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#!">
+                        <div class="product_img"><img src="./images/main_img/best_06.jpg"></div>
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#268d9f"></span>
+                            </div>
+                            <p class="name">코지 패브릭 라운지 인테리어 2인 소파</p>
+                            <p class="price">판매가 : 318,000원</p>
+                        </div>
+                    </a>
+                </div>
+            </div><!--list_01-->
+            <div class="bot_list list_02">
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_bed04.jpg" alt="침실가구 이미지4">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#6ea1b6"></span>
+                            </div>
+                            <p class="name">레체 침실가구 세트 F형 모던 장롱 옷장</p>
+                            <p class="price">판매가 : 523,000원</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_bed05.jpg" alt="침실가구 이미지5">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#c9b9a3"></span>
+                                <span style="background:#5d5b5b"></span>
+                            </div>
+                            <p class="name">레빈 고무나무 원목 침실가구세트</p>
+                            <p class="price">판매가 : 498,500원</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_bed06.jpg" alt="침실가구 이미지6">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#c9b9a3"></span>
+                            </div>
+                            <p class="name">레체 원서랍 투서랍 장롱세트 옷장 1600</p>
+                            <p class="price">판매가 : 445,000원</p>
+                        </div>
+                    </a>
+                </div>
+            </div><!--list_02-->
+            <div class="bot_list list_03">
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_kit04.jpg" alt="주방가구 이미지4">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#c9b9a3"></span>
+                            </div>
+                            <p class="name">레나 주방 진열장 유리 장식장</p>
+                            <p class="price">판매가 : 445,000원</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_kit05.jpg" alt="주방가구 이미지5">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#5d5b5b"></span>
+                            </div>
+                            <p class="name">베니토 4인 식탁세트</p>
+                            <p class="price">판매가 : 581,000원</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_kit06.jpg" alt="주방가구 이미지6">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#c9b9a3"></span>
+                            </div>
+                            <p class="name">올리오 렌지대 1200</p>
+                            <p class="price">판매가 : 234,000원</p>
+                        </div>
+                    </a>
+                </div>
+            </div><!--list_03-->
+            <div class="bot_list list_04">
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_living04.jpg" alt="거실가구 이미지4">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#EAC8A7"></span>
+                                <span style="background:#cccccc"></span>
+                            </div>
+                            <p class="name">미드센츄리 거실 모듈 소파 침대 협탁 1600</p>
+                            <p class="price">판매가 : 149,000원</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_kit05.jpg" alt="주방가구 이미지5">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background-color: #ffffff;"></span>
+                                <span style="background-color: #e5bcef;"></span>
+                            </div>
+                            <p class="name">신부 부클레 플라이 인테리어 2인 소파</p>
+                            <p class="price">판매가 : 355,000원</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_kit06.jpg" alt="주방가구 이미지6">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#658678"></span>
+                            </div>
+                            <p class="name">코지 패브릭 라운지 인테리어 2인 소파</p>
+                            <p class="price">판매가 : 318,000원</p>
+                        </div>
+                    </a>
+                </div>
+            </div><!--list_04-->
+            <div class="bot_list list_05">
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_study04.jpg" alt="서재/사무용가구 이미지4">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#c9b9a3"></span>
+                            </div>
+                            <p class="name">카루쏘 멀바우 서재 컴퓨터 서랍책상</p>
+                            <p class="price">판매가 : 279,000원</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_study05.jpg" alt="서재/사무용가구 이미지5">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#c9b9a3"></span>
+                            </div>
+                            <p class="name">데스커 콘센트형 책상세트 조명 도어 1400</p>
+                            <p class="price">판매가 : 341,000원</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_study06.jpg" alt="서재/사무용가구 이미지6">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#c9b9a3"></span>
+                            </div>
+                            <p class="name">스마트 와이즈 수납 전면 책상 풀세트</p>
+                            <p class="price">판매가 : 394,500원</p>
+                        </div>
+                    </a>
+                </div>
+            </div><!--list_05-->
+        </div><!--best_bottom-->
+    </section><!--best_item-->
+
+
+    <div class="event_banner02">
+        <div class="banner_img"><a href="#!"></a></div>
+    </div>
+
+    <section class="new_item tit">
+        <input type="radio" name="new_btn" id="new_01" checked>
+        <input type="radio" name="new_btn" id="new_02">
+        <input type="radio" name="new_btn" id="new_03">
+        <input type="radio" name="new_btn" id="new_04">
+        <input type="radio" name="new_btn" id="new_05">
+
+        <h2>New item</h2>
+        <p>이 달의 인기 신상품을 확인해 보세요!</p>
+
+        <div class="top_wrap">
+            <nav class="category">
+                <label for="new_01">전체</label>
+                <label for="new_02">침실가구</label>
+                <label for="new_03">주방가구</label>
+                <label for="new_04">거실가구</label>
+                <label for="new_05">서재/사무용가구</label>
+            </nav><!--category-->
+
+            <div class="new_top">
+                <div class="top_list list_01">
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 1</p>
+                                <img src="./images/main_img/time_sale04.jpg" alt="타임세일 이미지1">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#c9b9a3"></span>
+                                    <span style="background:#5d5b5b"></span>
+                                </div>
+                                <p class="name">루머 모듈 3단선반 거실 장식장 사이트 테이블</p>
+                                <p class="price">판매가 : 164,500원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 2</p>
+                                <img src="./images/main_img/best_02.jpg" alt="타임세일 이미지1">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#c9b9a3"></span>
+                                    <span style="background:#463716"></span>
+                                    <span style="background:#5d5b5b"></span>
+                                    <span style="background:#2f1e58"></span>
+                                </div>
+                                <p class="name">모멘트 3인 소파</p>
+                                <p class="price">판매가 : 236,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 3</p>
+                                <img src="./images/main_img/best_03.jpg" alt="타임세일 이미지1">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#658678"></span>
+                                    <span style="background:#8e8e8e"></span>
+                                </div>
+                                <p class="name">슬림 고무나무 원목 거실 테이블 좌탁 2컬러</p>
+                                <p class="price">판매가 : 140,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                </div><!-- list_01 -->
+                <div class="top_list list_02">
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 1</p>
+                                <img src="./images/main_img/best_bed01.jpg" alt="침실가구 이미지1">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#c9b9a3"></span>
+                                </div>
+                                <p class="name">마티니 침실 세트</p>
+                                <p class="price">판매가 : 409,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 2</p>
+                                <img src="./images/main_img/best_bed02.jpg" alt="침실가구 이미지2">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#c9b9a3"></span>
+                                    <span style="background:#463716"></span>
+                                </div>
+                                <p class="name">모멘트 안토니 침대(Q/K)</p>
+                                <p class="price">판매가 : 625,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 3</p>
+                                <img src="./images/main_img/best_bed03.jpg" alt="침실가구 이미지3">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#463716"></span>
+                                </div>
+                                <p class="name">모데나 원목 침실 거울</p>
+                                <p class="price">판매가 : 179,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                </div><!-- list_02 -->
+                <div class="top_list list_03">
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 1</p>
+                                <img src="./images/main_img/best_kit01.jpg" alt="주방가구 이미지1">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#c9b9a3"></span>
+                                </div>
+                                <p class="name">루머 모듈 3단선반 거실 장식장 사이트 테이블</p>
+                                <p class="price">164,500원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 2</p>
+                                <img src="./images/main_img/best_kit02.jpg" alt="주방가구 이미지2">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#c9b9a3"></span>
+                                </div>
+                                <p class="name">모멘트 3인 소파</p>
+                                <p class="price">236,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 3</p>
+                                <img src="./images/main_img/best_kit03.jpg" alt="주방가구 이미지3">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#c9b9a3"></span>
+                                </div>
+                                <p class="name">슬림 고무나무 원목 거실 테이블 좌탁 2컬러</p>
+                                <p class="price">판매가 : 140,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                </div><!-- list_03 -->
+                <div class="top_list list_04">
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 1</p>
+                                <img src="./images/main_img/best_living01.jpg" alt="거실가구 이미지1">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#c9b9a3"></span>
+                                </div>
+                                <p class="name">레넨 엔틱 원목 가죽 벤치 의자 3인용 거실 소파</p>
+                                <p class="price">판매가 : 295,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 2</p>
+                                <img src="./images/main_img/best_living02.jpg" alt="거실가구 이미지2">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#5d5b5b"></span>
+                                </div>
+                                <p class="name">스웬 무늬목 블랙 사각 소파 테이블 모던 탁자 1200</p>
+                                <p class="price">판매가 : 262,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 3</p>
+                                <img src="./images/main_img/best_03.jpg" alt="거실가구 이미지3">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#c9b9a3"></span>
+                                </div>
+                                <p class="name">슬림 고무나무 원목 거실 테이블 좌탁 2컬러</p>
+                                <p class="price">판매가 : 140,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                </div><!-- list_04 -->
+                <div class="top_list list_05">
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 1</p>
+                                <img src="./images/main_img/best_study01.jpg" alt="서재/사무용가구 이미지1">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#c9b9a3"></span>
+                                    <span style="background:#463716"></span>
+                                </div>
+                                <p class="name">제넨 고무나무 원목 서랍 책상 대형 작업 1800</p>
+                                <p class="price">판매가 : 530,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 2</p>
+                                <img src="./images/main_img/best_study02.jpg" alt="서재/사무용가구 이미지2">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#c9b9a3"></span>
+                                    <span style="background:#463716"></span>
+                                </div>
+                                <p class="name">앤드 원목 서재 고무나무 책꽃이 5단 책장 800</p>
+                                <p class="price">판매가 : 365,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#!">
+                            <div class="product_img">
+                                <p class="best">Best 3</p>
+                                <img src="./images/main_img/best_study03.jpg" alt="서재/사무용가구 이미지3">
+                            </div>
+                            <div class="icon">
+                                <div><img src="./images/main_img/someting_icon.png"></div>
+                                <div><img src="./images/main_img/cart_icon.png"></div>
+                            </div>
+                            <div class="text">
+                                <div class="color_box">
+                                    <span style="background:#ffffff"></span>
+                                    <span style="background:#8e8e8e"></span>
+                                </div>
+                                <p class="name">루엘 틈새 책장 슬림 좁은 틈새 책꽃이 400</p>
+                                <p class="price">판매가 : 257,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                </div><!-- list_05 -->
+            </div><!--best_top-->
+        </div><!--top_wrap-->
+
+        <div class="new_bottom">
+            <div class="bot_list list_01">
+                <div class="product">
+                    <a href="#!">
+                        <div class="product_img"><img src="./images/main_img/best_04.jpg"></div>
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#c9b9a3"></span>
+                                <span style="background:#463716"></span>
+                                <span style="background:#5d5b5b"></span>
+                                <span style="background:#268d9f"></span>
+                            </div>
+                            <p class="name">레체 예쁜 인테리어 거실장 북유럽 고급 티비장</p>
+                            <p class="price">판매가 : 325,000원</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#!">
+                        <div class="product_img"><img src="./images/main_img/best_05.jpg"></div>
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#c9b9a3"></span>
+                                <span style="background:#463716"></span>
+                            </div>
+                            <p class="name">루머 원목 모듈 거실 장식장 테이블</p>
+                            <p class="price">판매가 : 137,500원</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#!">
+                        <div class="product_img"><img src="./images/main_img/best_06.jpg"></div>
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#268d9f"></span>
+                            </div>
+                            <p class="name">코지 패브릭 라운지 인테리어 2인 소파</p>
+                            <p class="price">판매가 : 318,000원</p>
+                        </div>
+                    </a>
+                </div>
+            </div><!--list_01-->
+            <div class="bot_list list_02">
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_bed04.jpg" alt="침실가구 이미지4">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#6ea1b6"></span>
+                            </div>
+                            <p class="name">레체 침실가구 세트 F형 모던 장롱 옷장</p>
+                            <p class="price">판매가 : 523,000원</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_bed05.jpg" alt="침실가구 이미지5">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#c9b9a3"></span>
+                                <span style="background:#5d5b5b"></span>
+                            </div>
+                            <p class="name">레빈 고무나무 원목 침실가구세트</p>
+                            <p class="price">판매가 : 498,500원</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_bed06.jpg" alt="침실가구 이미지6">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#c9b9a3"></span>
+                            </div>
+                            <p class="name">레체 원서랍 투서랍 장롱세트 옷장 1600</p>
+                            <p class="price">판매가 : 445,000원</p>
+                        </div>
+                    </a>
+                </div>
+            </div><!--list_02-->
+            <div class="bot_list list_03">
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_kit04.jpg" alt="주방가구 이미지4">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#c9b9a3"></span>
+                            </div>
+                            <p class="name">레나 주방 진열장 유리 장식장</p>
+                            <p class="price">판매가 : 445,000원</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_kit05.jpg" alt="주방가구 이미지5">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#5d5b5b"></span>
+                            </div>
+                            <p class="name">베니토 4인 식탁세트</p>
+                            <p class="price">판매가 : 581,000원</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_kit06.jpg" alt="주방가구 이미지6">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#c9b9a3"></span>
+                            </div>
+                            <p class="name">올리오 렌지대 1200</p>
+                            <p class="price">판매가 : 234,000원</p>
+                        </div>
+                    </a>
+                </div>
+            </div><!--list_03-->
+            <div class="bot_list list_04">
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_living04.jpg" alt="거실가구 이미지4">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#EAC8A7"></span>
+                                <span style="background:#cccccc"></span>
+                            </div>
+                            <p class="name">미드센츄리 거실 모듈 소파 침대 협탁 1600</p>
+                            <p class="price">판매가 : 149,000원</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_kit05.jpg" alt="주방가구 이미지5">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background-color: #ffffff;"></span>
+                                <span style="background-color: #e5bcef;"></span>
+                            </div>
+                            <p class="name">신부 부클레 플라이 인테리어 2인 소파</p>
+                            <p class="price">판매가 : 355,000원</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_kit06.jpg" alt="주방가구 이미지6">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#658678"></span>
+                            </div>
+                            <p class="name">코지 패브릭 라운지 인테리어 2인 소파</p>
+                            <p class="price">판매가 : 318,000원</p>
+                        </div>
+                    </a>
+                </div>
+            </div><!--list_04-->
+            <div class="bot_list list_05">
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_study04.jpg" alt="서재/사무용가구 이미지4">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#c9b9a3"></span>
+                            </div>
+                            <p class="name">카루쏘 멀바우 서재 컴퓨터 서랍책상</p>
+                            <p class="price">판매가 : 279,000원</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_study05.jpg" alt="서재/사무용가구 이미지5">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#c9b9a3"></span>
+                            </div>
+                            <p class="name">데스커 콘센트형 책상세트 조명 도어 1400</p>
+                            <p class="price">판매가 : 341,000원</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#!">
+                        <img src="./images/main_img/best_study06.jpg" alt="서재/사무용가구 이미지6">
+                        <div class="icon">
+                            <div><img src="./images/main_img/someting_icon.png"></div>
+                            <div><img src="./images/main_img/cart_icon.png"></div>
+                        </div>
+                        <div class="text">
+                            <div class="color_box">
+                                <span style="background:#ffffff"></span>
+                                <span style="background:#c9b9a3"></span>
+                            </div>
+                            <p class="name">스마트 와이즈 수납 전면 책상 풀세트</p>
+                            <p class="price">판매가 : 394,500원</p>
+                        </div>
+                    </a>
+                </div>
+            </div><!--list_05-->
+        </div><!--best_bottom-->
+    </section><!--new_item-->
+
+    <div class="event_banner03">
+        <div class="banner_img"><a href="#!"></a></div>
+    </div>
+
+    <div class="tit photo_review">
+        <div class="title">
+            <h2>Photo review</h2>
+            <p>소중한 구매후기 감사드립니다</p>
+        </div>
+
+        <div class="product">
+            <a href="#!">
+                <div class="product_img">
+                    <div><img src="./images/main_img/best_01.jpg" alt="리뷰이미지1"></div>
+                    <div class="more_box">더보기</div>
+                </div>
+                <div class="text">
+                    <p class="txt01">침실에 무난하게 잘 어울리고 이뻐요</p>
+                    <p class="txt02">침실에 무난하게 잘 어울리고 이뻐요 (2024-12-10 20:00)</p>
+                    <p class="star">★★★★★</p>
+                    <p class="name">aud******</p>
+                </div>
+            </a>
+        </div><!--product-->
+        <div class="product">
+            <a href="#!">
+                <div class="product_img">
+                    <div><img src="./images/main_img/photo_review02.jpg" alt="리뷰이미지2"></div>
+                    <div class="more_box">더보기</div>
+                </div>
+                <div class="text">
+                    <p class="txt01">튼튼하고 거실에 놓으니 분위기가 달라졌어요</p>
+                    <p class="txt02">튼튼하고 거실에 놓으니 분위기가 달라졌어요 (2024-12-13 16:45)</p>
+                    <p class="star">★★★★★</p>
+                    <p class="name">tjs******</p>
+                </div>
+            </a>
+        </div><!--product-->
+        <div class="product">
+            <a href="#!">
+                <div class="product_img">
+                    <div><img src="./images/main_img/best_06.jpg" alt="리뷰이미지3"></div>
+                    <div class="more_box">더보기</div>
+                </div>
+                <div class="text">
+                    <p class="txt01">색감이 너무 이쁘고 자꾸 눈이가요</p>
+                    <p class="txt02">색감이 너무 이쁘고 자꾸 눈이가요 (2024-12-15 22:37)</p>
+                    <p class="star">★★★★★</p>
+                    <p class="name">als******</p>
+                </div>
+            </a>
+        </div><!--product-->
+        <div class="product">
+            <a href="#!">
+                <div class="product_img">
+                    <div><img src="./images/main_img/photo_review04.jpg" alt="리뷰이미지4"></div>
+                    <div class="more_box">더보기</div>
+                </div>
+                <div class="text">
+                    <p class="txt01">깔끔하고 수납이 많아서 좋아요</p>
+                    <p class="txt02">깔끔하고 수납이 많아서 좋아요 (2024-12-15 21:20)</p>
+                    <p class="star">★★★★★</p>
+                    <p class="name">tmd******</p>
+                </div>
+            </a>
+        </div><!--product-->
+        <div class="product">
+            <a href="#!">
+                <div class="product_img">
+                    <div><img src="./images/main_img/photo_review05.jpg" alt="리뷰이미지5"></div>
+                    <div class="more_box">더보기</div>
+                </div>
+                <div class="text">
+                    <p class="txt01">원하던 느낌입니다. 튼튼하고 인테리어와 잘어울려요</p>
+                    <p class="txt02">원하던 느낌입니다. 튼튼하고 인테리어와 잘어울려요 (2024-12-25 13:48)</p>
+                    <p class="star">★★★★★</p>
+                    <p class="name">tkd******</p>
+                </div>
+            </a>
+        </div><!--product-->
+    </div>
+
+    <aside class="wing_box">
+        <div class="btn_top"><i class="fa-solid fa-arrow-up"></i></div>
+        <div class="wing_btn open"><i class="fa-solid fa-angle-left"></i></div>
+        <div class="wing_btn close" style="display: none;"><i class="fa-solid fa-xmark"></i></div>
+        <div class="wing_banner">
+            <div class="wing_ban">
+                <a href="#!"><img src="images/main_img/윙배너_01.jpg"></a>
+                <div class="wing_01">
+                    <div><a href="#!">공지사항</a></div>
+                    <div><a href="#!">상품문의</a></div>
+                </div>
+                <div class="wing_02">
+                    <div><a href="#!">상품리뷰</a></div>
+                    <div><a href="#!">이벤트</a></div>
+                </div>
+                <div class="wing_03">
+                    <div><a href="#!">장바구니</a></div>
+                    <div><a href="#!">자주 묻는 질문</a></div>
+                </div>
+                <div class="wing_04">
+                    <p>고객센터</p>
+                    <p>1577-5678</p>
+                    <p>평일 오전 9시 ~ 오후 5시</p>
+                    <p>점심시간 오후 12시 ~ 오후 1시</p>
+                    <p>주말 및 공휴일 휴무</p>
+                </div>
+                <div class="wing_05">
+                    <a href="#!"><img src="./images/talktalk.jpg" alt=""></a>
+                    <a href="#!"><img src="./images/kakaotalk.jpg" alt=""></a>
+                </div>
+            </div><!--wing_ban-->
+        </div><!--wing_banner-->
+    </aside><!--wing_box-->
+
+    <footer class="footer">
+        <div class="footer_all">
+            <div class="footer_left">
+                <div><img src="./images/main_img/logo.jpg" alt="로고"></div>
+                <nav>
+                    <ul>
+                        <li><a href="#!">회사소개</a></li>
+                        <li><a href="#!">매장안내</a></li>
+                        <li><a href="#!">매장개설안내</a></li>
+                        <li><a href="#!">이용안내</a></li>
+                        <li><a href="#!">개인정보보호정책</a></li>
+                    </ul>
+                </nav>
+                <p><span>상호 : MARU ON</span><span>대표 : 정명선</span><span>전화 : 010-4592-5557</span><span>주소 : 47606 부산광역시
+                        연제구 연수로 11번길 100-14 한울타워 10층</span></p>
+                <P>반품주소 : 물류 기사님 직접 수거 (고객발송 불가)</P>
+                <P><span>사업자등록번호 : 4955007601</span><span>통신판매업신고 : 2891-부산연제구-1029[사업자정보확인]</span></P>
+                <p>개인정보관리책임자 : 정명선(audtjs2891@naver.com)</p>
+
+                <p class="copy">COPYRIGHT ㉿ {company_name} ALL RIGHTS TESERVED. Designed by lys ITSPEOPLE / Hosting by
+                    카페24㈜</p>
+            </div>
+            <div class="footer_right">
+                <div>
+                    <p>고객센터</p>
+                    <p>1577-5678</p>
+                </div>
+                <div>
+                    <p>평일 AM 09:00 - PM 05:00</p>
+                    <p>점심시간 PM 12:00 - PM 01:00</p>
+                    <p>주말 및 공휴일 휴무</p>
+                </div>
+                <div>
+                    <p class="mony">입금계좌안내</p>
+                    <p>국민 854702-01-207029</p>
+                    <p>예금주 : 정명선(MARU ON)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
