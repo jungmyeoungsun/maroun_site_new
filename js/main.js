@@ -45,7 +45,7 @@ var swiper = new Swiper(".mySwiper", {
 
 
 const countdownEl = document.getElementById("countdown");
-const startDate = new Date("2025-12-15T00:00:00");
+const startDate = new Date("2025-12-08T00:00:00");
 const endDate = new Date(startDate.getTime() + 7 * 24 * 60 * 60 * 1000);
 
 function pad(n) {
